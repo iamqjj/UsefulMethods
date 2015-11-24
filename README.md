@@ -1,3 +1,3 @@
 #useful method for javascript
-sort function
-userAgent function
+1. sort function
+2. userAgent function
