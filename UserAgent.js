@@ -113,4 +113,4 @@ var client=function(){
 }();
 
 
-//alert(client.ua);
+
