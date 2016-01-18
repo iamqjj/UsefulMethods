@@ -1,0 +1,20 @@
+   
+   //================ String to JSON =================
+    var jsonString = '{"a":"John" , "b":"Doe"}';
+    var jsonStringBadFormat = "{'a':'John' , 'b':'Doe'}";
+
+    //  JS 元素方法
+    var obj2 = eval('('+ jsonString + ')');  //work
+    obj2 = eval('('+ jsonStringBadFormat + ')');  //work
+    // JSON.JS 方法
+    var obj = JSON.parse(jsonString); // work
+    obj = JSON.parse(jsonStringBadFormat); //  no work for bad format
+    // JQuery 方法
+    var obj3 = jQuery.parseJSON(jsonString)；//work
+    obj3 = jQuery.parseJSON(jsonStringBadFormat); //  no work for bad format
+
+//================ JSON to String =================
+	var jsonObject = {"a":"John" , "b":"Doe" };
+	var jsonObject2 = {'a':'John' , 'b':'Doe' };
+	var str = JSON.stringify(jsonObject); //{"a":"John" , "b":"Doe"}
+  str = JSON.stringify(jsonObject2); //{"a":"John" , "b":"Doe"}
