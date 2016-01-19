@@ -1,6 +1,6 @@
 self.Event = {
         // 页面加载完成后
-        readyEvent : function(fn) {
+        readyEvent : function(fn) { 
             if (fn==null) {
                 fn=document;
             }
