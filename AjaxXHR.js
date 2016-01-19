@@ -1,7 +1,7 @@
 var xmlhttp;
 if( window.XMLHTTPRequest){
     xmlhttp = new XMLHTTPRequest();
-}else{
+}else{ 
     xmlhttp = new ActiveXObject("Micorosoft.XMLHTTP");
 }
 if (xmlhttp==null){
