@@ -24,3 +24,28 @@ xmlhttp.send();//parameter only for post request
 
 // XDomainRequest仅存在于IE中，是IE用于支持CORS请求的方式  
 // 检查XMLHttpRequest对象是否有“withCredentials”属性  
+
+//
+$.ajax( {
+    url: "" ,
+    type: "GET" ,
+    success: function( data, textStatus, jqXHR ){
+        alert("Data:" + data);
+    } ,
+    error: function(jqXHR, textStatus, errorMsg){
+        alert("Error1!");        //no work
+    },
+    error: function(jqXHR, textStatus, errorMsg){
+        alert("Error2!");        // work overwrite 1
+    }
+}
+).fail(
+    function(jqXHR, textStatus, errorMsg){
+        alert("Error3!");         //work  
+    }
+    
+).fail(
+    function(jqXHR, textStatus, errorMsg){
+        alert("Error4!");        // work  
+    }
+    );
