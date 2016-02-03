@@ -23,7 +23,7 @@ xmlhttp.setRequestHeader("Expires","0");
 xmlhttp.send();//parameter only for post request
 
 // XDomainRequest仅存在于IE中，是IE用于支持CORS请求的方式  
-// 检查XMLHttpRequest对象是否有“withCredentials”属性  
+// 检查XMLHttpRequest对象是否有“withCredentials”属性   
 
 //
 $.ajax( {
