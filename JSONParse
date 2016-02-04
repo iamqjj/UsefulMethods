@@ -17,4 +17,4 @@
 	var jsonObject = {"a":"John" , "b":"Doe" };
 	var jsonObject2 = {'a':'John' , 'b':'Doe' };
 	var str = JSON.stringify(jsonObject); //{"a":"John" , "b":"Doe"}
-  str = JSON.stringify(jsonObject2); //{"a":"John" , "b":"Doe"}
+        str = JSON.stringify(jsonObject2); //{"a":"John" , "b":"Doe"}
