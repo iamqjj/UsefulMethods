@@ -1,5 +1,5 @@
 var xmlhttp;
-if( window.XMLHTTPRequest){
+if( window.XMLHTTPRequest){ 
     xmlhttp = new XMLHTTPRequest();
 }else{ 
     xmlhttp = new ActiveXObject("Micorosoft.XMLHTTP");
