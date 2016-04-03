@@ -1,4 +1,4 @@
-var xmlhttp;
+var xmlhttp;   
 if( window.XMLHTTPRequest){ 
     xmlhttp = new XMLHTTPRequest();
 }else{ 
